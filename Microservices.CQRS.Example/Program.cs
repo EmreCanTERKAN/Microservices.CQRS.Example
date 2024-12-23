@@ -1,5 +1,6 @@
 using Microservices.CQRS.Example.Manual_CQRS.Handlers.CommandHandlers;
 using Microservices.CQRS.Example.Manual_CQRS.Handlers.QueryHandlers;
+using Microservices.CQRS.Example.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +14,9 @@ builder.Services.AddSingleton<CreateProductCommandHandler>()
                 .AddSingleton<GetAllProductQueryHandler>();
 #endregion
 
-
+#region MediatR CQRS
+builder.Services.AddMediatR(conf => conf.RegisterServicesFromAssembly(typeof(ApplicationDbContext).Assembly));
+#endregion
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

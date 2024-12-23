@@ -7,16 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.4.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="MediatR_CQRS\Commands\Request\" />
-    <Folder Include="MediatR_CQRS\Commands\Responses\" />
-    <Folder Include="MediatR_CQRS\Handlers\CommandHandlers\" />
-    <Folder Include="MediatR_CQRS\Handlers\QueryHandlers\" />
-    <Folder Include="MediatR_CQRS\Queries\Requests\" />
-    <Folder Include="MediatR_CQRS\Queries\Responses\" />
   </ItemGroup>
 
 </Project>
