@@ -16,7 +16,7 @@ namespace Microservices.CQRS.Example.Manual_CQRS.Handlers.CommandHandlers
             return new DeleteProductCommandResponse()
             {
                 IsSuccess = true
-            }
+            };
         }
     }
 }

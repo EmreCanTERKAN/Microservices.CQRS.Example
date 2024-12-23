@@ -4,7 +4,7 @@ using Microservices.CQRS.Example.Models;
 
 namespace Microservices.CQRS.Example.Manual_CQRS.Handlers.QueryHandlers
 {
-    public class GelAllProductQueryHandler
+    public class GetAllProductQueryHandler
     {
         public List<GetAllProductQueryResponse> GetAllProduct(GetAllProductQueryRequest getAllProductQueryRequest)
         {
