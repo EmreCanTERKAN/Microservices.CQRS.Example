@@ -1,6 +1,6 @@
-﻿namespace Microservices.CQRS.Example.Models
+﻿namespace Microservices.CQRS.Example.Manual_CQRS.Queries.Responses
 {
-    public class Product
+    public class GetAllProductQueryResponse
     {
         public Guid Id { get; set; }
         public string Name { get; set; }

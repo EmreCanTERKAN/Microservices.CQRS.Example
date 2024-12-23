@@ -19,8 +19,6 @@
     <Folder Include="MediatR_CQRS\Queries\Responses\" />
     <Folder Include="Manual_CQRS\Handlers\CommandHandlers\" />
     <Folder Include="Manual_CQRS\Handlers\QueryHandlers\" />
-    <Folder Include="Manual_CQRS\Queries\Responses\" />
-    <Folder Include="Manual_CQRS\Queries\Requests\" />
   </ItemGroup>
 
 </Project>
